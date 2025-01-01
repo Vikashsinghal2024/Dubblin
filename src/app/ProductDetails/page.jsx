@@ -71,7 +71,8 @@ const ProductEach = ({ product, onAddToCart, onBuyNow, onClose }) => {
                 return newZoom > 3 ? 1 : newZoom;
             });
         }
-    };
+    }; 
+    // c
 
     const bottleListRef = useRef(null);
 
