@@ -107,26 +107,9 @@ const ProductEach = ({ product, onAddToCart, onBuyNow, onClose }) => {
     };
 
     return (
-        // <div className="bg-white inset-10  flex flex-col md:flex-row p-4 md:p-8 justify-evenly max-w-6xl mx-auto relative">
-        //    
-
-//         <button 
-//         onClick={onClose}
-//         className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
-//     >
-//         <X size={24} />
-//  </button>
-        <div className='bg-white  overflow-x-hidden  md:h-[90vh] h-full w-screen  md:m-10 m-0 overflow-y-auto justify-evenly rounded-lg p-2'  onClick={(e) => e.stopPropagation()}>
-             <div className=' text-xl p-2 flex justify-end'>
-             <button 
-                 onClick={onClose}
-                 className=" text-gray-500 hover:text-gray-700"
-             >
-                 <X size={24} />
-          </button>
-             </div>
-      
-         <div className='flex flex-wrap'>
+        <>
+        <h1 className='text-center text-4xl my-6 text-black font-Outfit'>Product Deatails</h1>
+         <div className='flex flex-wrap font-Outfit'>
          <div className="w-full md:w-1/2 mb-6 md:mb-0 mt-5 px-5">
                 <div 
                     className="flex justify-center relative overflow-hidden"
@@ -196,8 +179,7 @@ const ProductEach = ({ product, onAddToCart, onBuyNow, onClose }) => {
          
             <div className="w-full mt-5 md:w-1/2 px-5">
             <div className=' flex justify-between'>
-                
-                <h1 className="text-xl font-semibold"> <a href="/ProductDetails">Custom Ecofriendly Water Bottles</a></h1>
+                <h1 className="text-xl font-semibold">Custom Ecofriendly Water Bottles</h1>
 
                 </div>
                 <div className="space-y-4 mt-8 mb-8 flex flex-col justify-center">
@@ -279,8 +261,30 @@ const ProductEach = ({ product, onAddToCart, onBuyNow, onClose }) => {
                 </div>
             </div>
          </div>
+
+         <div className='container mx-auto flex flex-col items-center px-4'>
+            <div className='container mx-auto mt-6 flex flex-col md:flex-row items-center '>
+
+                    <div className='text-2xl md:text-3xl text-black font-bold mb-4'>
+                        <h1>Discription</h1>
+                    </div>
+            </div>
+            <hr className='border-t-2 border-black w-full' />
+            <div className='container mx-auto mt-6 flex flex-col  md:flex-row items-center md:px-5 lg:px-10'>
+            <div className="space-y-4 mt-8 mb-8 flex flex-col gap-4 text-xl justify-center">
+                    <p className='flex gap-10'><strong className='w-1/4 block'>Material</strong> <span className='block w-1/4 text-slate-500 font-semibold'>In stock</span></p>
+                    <p className='flex gap-10'><strong className='w-1/4 block'>Colour</strong> <span className='block w-1/4 text-slate-500 font-semibold'>{capacity}</span></p>
+                    <p className='flex gap-10'><strong className='w-1/4 block'>Capacity</strong> <span className='block text-slate-500 font-semibold'>Double Wall Insulated, BPA Free, No Sweat Exterior</span></p>
+                    <p className='flex gap-10'><strong className='w-1/4 block '>Brand</strong> <span className='block w-1/4 text-slate-500 font-semibold'>Dubblin Custom</span></p>
+                    <p className='flex gap-10'><strong className='w-1/4 block '>Item Weight</strong> <span className='block w-1/4 text-slate-500 font-semibold'>Dubblin Custom</span></p>
+                    <p className='flex gap-10'><strong className='w-1/4 block '>Item Dimensions LxWxH</strong> <span className='block w-1/4 text-slate-500 font-semibold'>Dubblin Custom</span></p>
+                    <p className='flex gap-10'><strong className='w-1/4 block '>Manufacturer</strong> <span className='block w-1/4 text-slate-500 font-semibold'>Dubblin Custom</span></p>
+                    <p className='flex gap-10'><strong className='w-1/4 block '>Model Name:</strong> <span className='block w-1/4 text-slate-500 font-semibold'>Dubblin Custom</span></p>
+                    <p className='flex gap-10'><strong className='w-1/4 block '>Model Name:</strong> <span className='block w-1/4 text-slate-500 font-semibold'>Dubblin Custom</span></p>
+                </div>
+            </div>
          </div>
-        
+         </>
     );
 };
 
