@@ -72,7 +72,7 @@ const ProductEach = ({ product, onAddToCart, onBuyNow, onClose }) => {
             });
         }
     }; 
-    // c
+    
 
     const bottleListRef = useRef(null);
 
